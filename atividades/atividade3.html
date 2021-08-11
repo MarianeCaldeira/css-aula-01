@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style type="text/css">
+    body {
+        background: #FFFFFF url(fundoformulario.jpg);
+    }
+    header {
+        color: blueviolet;
+        font-family: arial, helvetica, sans-serif;
+        font-size: 25px;
+    }
+    form {
+        margin: 0 auto;
+        width: 1000px;
+        padding: 3em;
+        border: 2px solid rgb(12, 12, 12);
+    }
+    h1 {
+        color: rgb(6, 129, 37);
+        font-family: arial, helvetica, sans-serif;
+        font-size: 50px;
+    }
+    img {
+        border-radius: 30px;
+    }
+    legend {
+        color: red;
+        font-family: arial, helvetica, sans-serif;
+        font-size: 20px;
+    }
+    footer {
+        color: rgb(27, 24, 24);
+        font-size: 20px;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <center><header>Bem-Vindo(a) ao nosso site!</header></center>
+    <form action="formulario">
+    <h1>Formulário</h1>
+    <img src="formulario.jpg" alt="foto" width="100">
+    <fieldset>
+    <legend>Dados Pessoais</legend>
+    <p>Nome:<input type="text"/></p>
+    <p>Endereço:<input type="text"/></p>
+    <p>Cidade:<input type="text"/></p>
+    <p>Estado:<select id="estado">
+    <option value="são paulo">São Paulo</option>
+    <option value="pernambuco">Pernambuco</option>
+    </select></p>
+    </fieldset>
+    <br><br>
+    <fieldset>
+    <legend>Dados Profissionais</legend>
+    <label>Natureza do cargo:</label><br>
+    <input type="radio" id="gerência">
+    <label for="Gerência">Gerência</label>
+    <input type="radio" id="financeiro">
+    <label for="financeiro">Financeiro</label>
+    <input type="radio" id="Recepção">
+    <label for="Recepção">Recepção</label>
+    <input type="radio" id="administrativo">
+    <label for="administrativo">Administrativo</label>
+    <input type="radio" id="jurídico">
+    <label for="jurídico">Jurídico</label>
+    <br><br>
+    <label>Área de interesse:</label><br>
+    <input type="checkbox" id="computação" name="computação">
+    <label for="computação">Computação</label>
+    <input type="checkbox" id="Biologia" name="Biologia">
+    <label for="Biologia">Biologia</label>
+    <input type="checkbox" id="Meio Ambiente" name="Meio Ambiente">
+    <label for="Meio Ambiente">Meio Ambiente</label>
+    <input type="checkbox" id="Engenharia" name="Engenharia">
+    <label for="Engenharia">Engenharia</label>
+    <input type="checkbox" id="História" name="História">
+    <label for="História">História</label>
+    <br><br>
+    <label for="Mini-Currículo">Mini-Currículo:</label><br>
+    <textarea name="Mini-Currículo" id="Mini-Currículo" cols="50" rows="10"></textarea>
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar">
+    <input type="submit" value="Limpar">
+    </form><br>
+    <center><footer><i>Criado por Mariane B. Caldeira, aluna da Rede Cidadã.</i></footer></center>
+</body>
+</html>
